@@ -40,4 +40,43 @@ Built using **Laravel** + **PHP** + **HTML** (with Blade templating) to streamli
 
 1. پروژه را کلون کنید:
    ```bash
-   git clone https://github.com/SalehPRD/YOUR_REPO_NAME.git
+   git clone https://github.com/SalehPRD/YOUR_REPO_NAME.git وارد پوشه پروژه شوید:
+2. وارد پوشه پروژه شوید:
+   ```bash
+   cd Special-Topics404
+3. وابستگی‌ها را نصب کنید:
+   ```bash
+   composer install
+4. فایل محیطی را آماده کنید:
+   ```bash
+   cp .env.example .env
+ فایل **.env** را باز کنید و تنظیمات دیتابیس (DB_DATABASE، DB_USERNAME، DB_PASSWORD و …) را انجام دهید.
+
+5. کلید اپلیکیشن تولید کنید:
+   ```bash
+   php artisan key:generate
+6. دیتابیس را migrate کنید:
+   ```bash
+   php artisan migrate
+7. سرور را اجرا کنید:
+   ```bash
+   php artisan serve
+
+## نحوه استفاده | Usage
+
+1. صاحب بار وارد سایت می‌شود و فرم ثبت سفارش را پر می‌کند (مبدا، مقصد، نوع بار، وزن، نوع کامیون دلخواه).  
+2. رانندگان بارهای ثبت‌شده را مشاهده می‌کنند و بار مناسب را انتخاب/قبول می‌کنند.
+
+<div align="center">
+
+### نمونه فرم ثبت سفارش  
+![فرم ثبت سفارش](screenshots/form.png)
+
+</div>
+
+## نویسنده | Author
+
+- **Saleh**  
+  GitHub: [@SalehPRD](https://github.com/SalehPRD)
+
+
